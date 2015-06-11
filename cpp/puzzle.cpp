@@ -1,10 +1,9 @@
 ///AUTHOR: Carsen Yates
-///2015:06:04
-///DESCRIPTION: [DEPRICATED] Class for the SudokuPuzzle object.
+///2015:06:11
+///DESCRIPTION: Basic implementation for the SudokuPuzzle object.
 #include<iostream>
 #include<string>
 #include<iomanip>
-#include<thread>
 #include<math.h>
 
 #include"sudoku.h"
@@ -184,57 +183,3 @@ void SudokuPuzzle::set(int x, int y, int z)
 {
 	grid[(size*y)+x]=z;
 }
-bool _solve(SudokuPuzzle&puzzle, int size, int&guesses, int x, int y)
-{
-	if(!puzzle.nextEmpty(x, y))return true;
-	for(int z=1;z<=size;z++)
-	{
-		guesses++;
-		if(puzzle.fit(x,y,z))
-		{
-			puzzle.set(x,y,z);
-			if(_solve(puzzle,size,guesses,x,y))return true;
-			puzzle.set(x,y,0);
-		}
-	}
-	return false;
-}
-SudokuPuzzle SudokuPuzzle::solve()const
-{
-	int guesses=0;
-	return solve(guesses);
-}
-SudokuPuzzle SudokuPuzzle::solve(int&guesses)const
-{
-	SudokuPuzzle p(grid,size);
-	if(_solve(p,size,guesses,0,0)) return p;
-	return SudokuPuzzle(grid,size);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

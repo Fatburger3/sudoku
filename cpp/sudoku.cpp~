@@ -1,6 +1,6 @@
 ///AUTHOR: Carsen Yates
 ///2015:06:04
-///DESCRIPTION: [DEPRICATED] Class for the SudokuPuzzle object.
+///DESCRIPTION: Class for the SudokuPuzzle object.
 #include<iostream>
 #include<string>
 #include<iomanip>
