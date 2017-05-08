@@ -4,6 +4,7 @@ session_start();
 include('inc/db.php');
 include('inc/layout.php');
 include('inc/header.html');
+echo makeNav('Admin Login', 'admin_index.php');
 
 
 if($_SERVER["REQUEST_METHOD"] === "POST")
@@ -33,8 +34,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST")
 		$error = "Your username or password is invalid";
 	}
 }
-
-makeNav('Admin Login', 'admin_index.php'); ?>
+?>
 <div align="center">
 	<div id="login_block" align="left">
 

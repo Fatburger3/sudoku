@@ -2,7 +2,7 @@
 <?php
 include('inc/layout.php');
 include('inc/header.html');
-makeNav('Search', 'search.php');
+echo makeNav('Search', 'search.php');
 
 $puzzle_size = 3;
 
@@ -27,7 +27,7 @@ for($i = 1;$i < $puzzle_size; $i++)
 
 <?php
 
-displayPuzzleForm($puzzle);
+echo makePuzzleForm($puzzle);
 
 include('inc/footer.html');
 ?>

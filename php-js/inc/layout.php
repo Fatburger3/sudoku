@@ -1,12 +1,13 @@
 <?php
 include("sudoku.php");
 
+// Echos a navBar
 function makeNav($title, $current)
 {
 	$names=array("Play", "Search", "Admin");
 	$pages=array("index.php", "search.php", "admin_index.php");
 
-	echo '
+	$result = '
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<ul class="nav navbar-nav">
@@ -17,42 +18,43 @@ function makeNav($title, $current)
 				$n=$names[$i];
 				if($current===$p)
 				{
-					echo '<li class="active">';
+					$result .= '<li class="active">';
 				}
 				else
 				{
-					echo '<li>';
+					$result .= '<li>';
 				}
-				echo '<a href="'.$p.'">'.$n.'</a></li>';
+				$result .= '<a href="'.$p.'">'.$n.'</a></li>';
 			}
-	echo '
+	$result .= '
 			</ul>
 		</div>
 	</nav>
 	<h1>'.$title.'</h1>';
 }
 
+// Echos the secondary navbar for the admin page
 function makeAdminNav($title, $current)
 {
-	makeNav('Administration', 'admin_index.php');
+	$result .= makeNav('Administration', 'admin_index.php');
 	$names=array("Reports", "Tables", "Logout");
 	$pages=array("admin_reports.php", "admin_tables.php", "admin_logout.php");
 
-	echo '<div class="btn-group" role="group">';
+	$result .= '<div class="btn-group" role="group">';
 		for($i=0;$i<count($pages);$i++)
 		{
 			$p=$pages[$i];
 			$n=$names[$i];
 			if($current===$p)
 			{
-				echo '<a class="btn btn-default disabled" href="'.$p.'" aria-disabled="true">'.$n.'</a></li>';
+				$result .= '<a class="btn btn-default disabled" href="'.$p.'" aria-disabled="true">'.$n.'</a></li>';
 			}
 			else
 			{
-				echo '<a class="btn btn-default" href="'.$p.'">'.$n.'</a></li>';
+				$result .= '<a class="btn btn-default" href="'.$p.'">'.$n.'</a></li>';
 			}
 		}
-	echo '
+	$result .= '
 	</div>
 	<h3>'.$title.'</h3>';
 }
@@ -92,78 +94,80 @@ function makeDropdown($title, $name, $value, $names, $values, $onclick)
 
 // Displays a puzzle object in a cute little grid
 // This version is not editable
-function displayPuzzle($puzzle)
+function makePuzzle($puzzle)
 {
 	$s = getPuzzleSize($puzzle);
 
-	echo '<table align="center" class="puzzle">';
+	$result = '<table align="center" class="puzzle">';
 	for($yb = 0; $yb < $s; $yb++)
 	{
-		echo '<tr class="puzzle_block_row">';
+		$result .= '<tr class="puzzle_block_row">';
 		for($xb = 0; $xb < $s; $xb++)
 		{
-			echo '<td class="puzzle_block"><table>';
+			$result .= '<td class="puzzle_block"><table>';
 			for($y = 0; $y < $s; $y++)
 			{
-				echo '<tr class="puzzle_row">';
+				$result .= '<tr class="puzzle_row">';
 				for($x = 0; $x < $s; $x++)
 				{
 					$i = indexOfBlock($xb, $yb, $x, $y);
-					echo '<td class="puzzle_cell">';
-					//echo ($puzzle[$i] == 0?' ':$puzzle[$i]);
-					echo ($puzzle[$i]);
-					echo '</td>';
+					$result .= '<td class="puzzle_cell">';
+					//$result .= ($puzzle[$i] == 0?' ':$puzzle[$i]);
+					$result .= ($puzzle[$i]);
+					$result .= '</td>';
 				}
-				echo '</tr>';
+				$result .= '</tr>';
 			}
-			echo '</table></td>';
+			$result .= '</table></td>';
 		}
-		echo '</tr>';
+		$result .= '</tr>';
 	}
-	echo '</table>';
+	$result .= '</table>';
+	return $result;
 }
 
 // Display the puzzle on the form
-function displayPuzzleForm($puzzle)
+function makePuzzleForm($puzzle)
 {
 	$s = getPuzzleSize($puzzle);
 
-	//echo '<form class="puzzle_form">';
-	echo '<table align="center" class="puzzle">';
+	//$result .=  '<form class="puzzle_form">';
+	$result = '<table align="center" class="puzzle">';
 	$i = 0;
 	for($yb = 0; $yb < $s; $yb++)
 	{
-		echo '<tr class="puzzle_block_row">';
+		$result .= '<tr class="puzzle_block_row">';
 		for($xb = 0; $xb < $s; $xb++)
 		{
-			echo '<td class="puzzle_block"><table>';
+			$result .= '<td class="puzzle_block"><table>';
 			for($y = 0; $y < $s; $y++)
 			{
-				echo '<tr class="puzzle_row">';
+				$result .= '<tr class="puzzle_row">';
 				for($x = 0; $x < $s; $x++)
 				{
 					$i = indexOfBlock($s, $xb, $yb, $x, $y);
 					$v = $puzzle[$i];
-					echo '<td class="puzzle_cell">';
-					echo '<input class="puzzle_input_cell" type="text" size="1" name="'.$i.'" id="'.$i.'" ';
+					$result .= '<td class="puzzle_cell">';
+					$result .= '<input class="puzzle_input_cell" type="text" size="1" name="'.$i.'" id="'.$i.'" ';
 					if($v != 0)
 					{
-						echo 'value="'.$v.'"';
+						$result .= 'value="'.$v.'"';
 					}
-					echo '/>';
-					echo '</td>';
+					$result .= '/>';
+					$result .= '</td>';
 				}
-				echo '</tr>';
+				$result .= '</tr>';
 			}
-			echo '</table></td>';
+			$result .= '</table></td>';
 		}
-		echo '</tr>';
+		$result .= '</tr>';
 	}
-	echo '</table><br/>';
-	echo '<div class="btn-group" role="group" aria-label="Basic example">';
-	echo '<button class="btn btn-success" onclick="solvePuzzleForm(); return false;">Solve</button>';
-	echo '<button class="btn btn-warning" onclick="clearInputs(); return false;">Clear</button>';
-	echo '</div>';
-	//echo '</form>';
+	$result .= '</table><br/>';
+	$result .= '<div class="btn-group" role="group" aria-label="Basic example">';
+	$result .= '<button class="btn btn-success" onclick="solvePuzzleForm(); return false;">Solve</button>';
+	$result .= '<button class="btn btn-warning" onclick="clearInputs(); return false;">Clear</button>';
+	$result .= '</div>';
+	//$result .=  '</form>';
+	return $result;
 }
 ?>

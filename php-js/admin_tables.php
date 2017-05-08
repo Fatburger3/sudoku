@@ -5,8 +5,7 @@ include('admin_session.php');
 include('inc/layout.php');
 include('inc/sudoku.php');
 include('inc/header.html');
-
-makeAdminNav("Tables", "admin_tables.php");
+echo makeAdminNav("Tables", "admin_tables.php");
 
 function displayForm($tables, $selected, $start, $end)
 {
@@ -42,8 +41,10 @@ function displayForm($tables, $selected, $start, $end)
 function displayTable($table, $start, $end)
 {
 
-//TODO: Prevent injection of table name
 	$db = getDBConnection();
+
+	// getCols($table) prevents SQL injection of $table,
+	// if injection is attempted, die is called.
 	$cols = getCols($table);
 
 	$result="";
@@ -65,8 +66,12 @@ function displayTable($table, $start, $end)
 	{
 		$result.="<td colspan='3'></td>";
 	}
-	$stmt = $db->prepare("SELECT * FROM $table LIMIT $start, $end;");
-	$stmt->execute();
+
+	$stmt = $db->prepare("SELECT * FROM $table LIMIT :s, :e;");
+	$np = array();
+	$np[':s'] = $start;
+	$np[':e'] = $end;
+	$stmt->execute($np);
 
 
 	// For adding rows
@@ -97,26 +102,22 @@ function displayTable($table, $start, $end)
 		$i = 0;
 		foreach($cols as $col)
 		{
+			$result.="<td title='$col'>";
 			if($col != 'pass')
 			{
-				$result.="<td title='$col'>";
-
 				$result.="<input type='text' name='$col' value='".$row[$col]."' style='width:100%;'/>";
 				$result.="<input type='hidden' name='original_$col' value='".$row[$col]."'/>";
-
-				$result.="</td>";
 			}
 			else if($col == 'payload')
 			{
-
+				$result.=;
 			}
 			else
 			{
-				$result.="<td title='$col'>";
 				$result.="<input type='text' name='$col' value='' style='width:100%;'/>";
 				$result.="<input type='hidden' name='original_$col' value='".$row[$col]."'/>";
-				$result.="</td>";
 			}
+			$result.="</td>";
 		}
 		$result.="<td>";
 		$result.="<input type='hidden' name='table' value='$table'/>";
