@@ -1,0 +1,42 @@
+html, body {
+    text-align: center;
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+
+.puzzle{
+    border: outset 5px salmon;
+}
+.puzzle_block{
+    border: inset 5px steelblue;
+}
+.puzzle_input_cell, .puzzle_cell{
+    border: solid 1px gray;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin:0;
+    background-color: gray;
+    color: black;
+}
+.spacer {
+    display: inline-block;
+    width: 10%;
+}
+#submitted, #solved {
+    text-align: center;
+    display: inline-block;
+    width: 35%;
+}
+#main {
+    height: 100%;
+}
+#checkmark{
+    display: inline-block;
+    width: 64px;
+}
+#select_puzzle {
+    display: none;
+}
