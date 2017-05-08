@@ -31,6 +31,7 @@ function makeNav($title, $current)
 		</div>
 	</nav>
 	<h1>'.$title.'</h1>';
+	return $result;
 }
 
 // Echos the secondary navbar for the admin page
@@ -57,6 +58,7 @@ function makeAdminNav($title, $current)
 	$result .= '
 	</div>
 	<h3>'.$title.'</h3>';
+	return $result;
 }
 
 //A magical function that makes a set of radio buttons

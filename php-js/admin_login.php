@@ -6,7 +6,6 @@ include('inc/layout.php');
 include('inc/header.html');
 echo makeNav('Admin Login', 'admin_index.php');
 
-
 if($_SERVER["REQUEST_METHOD"] === "POST")
 {
 	// username and password sent from form
