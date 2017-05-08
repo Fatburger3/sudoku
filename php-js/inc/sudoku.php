@@ -27,23 +27,31 @@ function getPuzzleSize($puzzle)
 function parsePuzzle($puzzle_string)
 {
 	$puzzle = array();
-	foreach($puzzle_string as $c)
+	foreach(explode(',', $puzzle_string) as $c)
 	{
-		//TODO THIS WILL NOT WORK U STUPID BITCH
-		// STORE WITH SPLIT SEQUENCE INSTEAD,
-		// CURRENT STYLE WILL NOT ALLOW FOR LARGER THAN 9x9 PUZZLES
 		$puzzle []= (int)$c;
 	}
+
+	//this does error checking for us :)
+	getPuzzleSize($puzzle);
 	return $puzzle;
 }
 
 // Converts a puzzle to a string to be stored in DB
 function puzzleToString($puzzle)
 {
-		//TODO THIS WILL NOT WORK U STUPID BITCH
 	$result = '';
+	$init = 0;
 	foreach($puzzle as $i)
 	{
+		if($init === 0)
+		{
+			$init = 1;
+		}
+		else
+		{
+			$result .= ',';
+		}
 		$result .= (string) $i;
 	}
 	return $result;

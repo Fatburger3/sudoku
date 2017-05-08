@@ -3,6 +3,7 @@
 <?php
 include('admin_session.php');
 include('inc/layout.php');
+include('inc/sudoku.php');
 include('inc/header.html');
 
 makeAdminNav("Tables", "admin_tables.php");
@@ -104,6 +105,10 @@ function displayTable($table, $start, $end)
 				$result.="<input type='hidden' name='original_$col' value='".$row[$col]."'/>";
 
 				$result.="</td>";
+			}
+			else if($col == 'payload')
+			{
+
 			}
 			else
 			{
