@@ -86,7 +86,7 @@ if(false)
 $diffs = getDifficulties();
 $db = getDBConnection();
 
-if(size == 0)
+if($size == 0)
 {
 
 	$sql = "";
