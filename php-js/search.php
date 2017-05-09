@@ -83,15 +83,32 @@ if(false)
 }
 
 
+$diffs = getDifficulties();
 $db = getDBConnection();
-$sql = "SELECT * FROM puzzle$size".$where." LIMIT $start, $end";
+
+if(size == 0)
+{
+
+	$sql = "";
+	for($i=2; $i<=$MAX_PUZZLE_SIZE; $i++)
+	{
+		if($i != 2)
+		{
+			$sql .= " UNION ";
+		}
+		$sql.= "SELECT * FROM puzzle$i$where LIMIT $start, $end";
+	}
+}
+else
+{
+	$sql = "SELECT * FROM puzzle$size".$where." LIMIT $start, $end";
+}
 $stmt = $db->prepare($sql);
 if(!$stmt->execute($np))
 {
 	die("SQL ERROR");
 }
 
-$diffs = getDifficulties();
 ?>
 <form style='margin-left:30%;margin-right:30%;'>
 
@@ -161,9 +178,17 @@ $diffs = getDifficulties();
 </form>
 <hr>
 <?php
-
+$start = true;
 while($row = $stmt->fetch(PDO::FETCH_ASSOC))
 {
+	if($start)
+	{
+		$start = false;
+	}
+	else
+	{
+		echo '<hr>';
+	}
 	$puzzle_string=$row['payload'];
 	$puzzle=parsePuzzle($puzzle_string);
 	echo makePuzzleSelector($puzzle, $puzzle_string, $diffs[$row['difficulty_id']], $row['difficulty_id']);

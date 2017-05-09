@@ -513,3 +513,156 @@ Stack trace:
 #0 /home/ubuntu/workspace/sudoku/php-js/search.php(88): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 88
+[09-May-2017 06:20:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'payload' cannot be null' in /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php:129
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php(129): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php on line 129
+[09-May-2017 06:38:03 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 72 bytes) in /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php on line 16
+[09-May-2017 06:38:03 UTC] PHP Stack trace:
+[09-May-2017 06:38:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php:0
+[09-May-2017 06:39:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'payload' cannot be null' in /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php:154
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php(154): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php on line 154
+[09-May-2017 06:39:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'payload' cannot be null' in /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php:154
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php(154): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/admin_modifytable.php on line 154
+[09-May-2017 06:42:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle0' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:89
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(89): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 89
+[09-May-2017 06:44:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle0' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:90
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(90): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 90
+[09-May-2017 06:45:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle0' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:90
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(90): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 90
+[09-May-2017 06:45:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle0' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:91
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(91): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 91
+[09-May-2017 06:46:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle0' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:91
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(91): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 91
+[09-May-2017 06:52:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:110
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(110): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 110
+[09-May-2017 06:52:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle4' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:110
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(110): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 110
+[09-May-2017 06:52:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle4' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:110
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(110): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 110
+[09-May-2017 06:52:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle4' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:110
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(110): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 110
+[09-May-2017 06:53:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle4' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/search.php:109
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(109): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 109
+[09-May-2017 06:56:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN puzzle3 LIMIT 0, 10' at line 1' in /home/ubuntu/workspace/sudoku/php-js/search.php:108
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(108): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 108
+[09-May-2017 06:56:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN puzzle3 LIMIT 0, 10' at line 1' in /home/ubuntu/workspace/sudoku/php-js/search.php:109
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(109): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 109
+[09-May-2017 06:56:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN puzzle3 LIMIT 0, 10' at line 1' in /home/ubuntu/workspace/sudoku/php-js/search.php:109
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(109): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 109
+[09-May-2017 07:43:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 15
+[09-May-2017 07:44:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 15
+[09-May-2017 07:45:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 15
+[09-May-2017 07:46:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 16
+[09-May-2017 07:47:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 16
+[09-May-2017 07:47:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 16
+[09-May-2017 07:47:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 17
+[09-May-2017 07:48:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 17
+[09-May-2017 07:49:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sudoku.puzzle1' doesn't exist' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 17
+[09-May-2017 07:53:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(24): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 24
+[09-May-2017 07:54:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id='1'' at line 1' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 24
+[09-May-2017 07:54:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id='1'' at line 1' in /home/ubuntu/workspace/sudoku/php-js/action_solve.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/action_solve.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/action_solve.php on line 24
+[09-May-2017 08:03:44 UTC] PHP Warning:  include(action_open): failed to open stream: No such file or directory in /home/ubuntu/workspace/sudoku/php-js/index.php on line 6
+[09-May-2017 08:03:44 UTC] PHP Stack trace:
+[09-May-2017 08:03:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/index.php:0
+[09-May-2017 08:03:44 UTC] PHP Warning:  include(): Failed opening 'action_open' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/sudoku/php-js/index.php on line 6
+[09-May-2017 08:03:44 UTC] PHP Stack trace:
+[09-May-2017 08:03:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/index.php:0
+[09-May-2017 08:04:29 UTC] PHP Fatal error:  Cannot redeclare getTables() (previously declared in /home/ubuntu/workspace/sudoku/php-js/inc/db.php:3) in /home/ubuntu/workspace/sudoku/php-js/inc/db.php on line 3
+[09-May-2017 08:04:29 UTC] PHP Stack trace:
+[09-May-2017 08:04:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/index.php:0
+[09-May-2017 08:04:29 UTC] PHP   2. include() /home/ubuntu/workspace/sudoku/php-js/index.php:6

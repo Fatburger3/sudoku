@@ -12,6 +12,25 @@ function clearInputs()
 	}
 }
 
+// Converts a puzzle to a string to be stored in DB
+function puzzleToString(puzzle)
+{
+	var result = '';
+	var init = 0;
+	puzzle.forEach(function callback(currentValue, i, puzzle)
+	{
+		if(init === 0)
+		{
+			init = 1;
+		}
+		else
+		{
+			result = result + ',';
+		}
+		result = result + currentValue.toString();
+	});
+	return result;
+}
 // This returns the SIZE of the puzzle,
 // defined as the number of CELLS on one edge
 // of one BLOCK of the puzzle.
@@ -198,6 +217,7 @@ function getPuzzle()
 function solvePuzzleForm()
 {
 	var puzzle = getPuzzle();
+	var oldPuzzle = puzzle.slice();
 	// This is the same code as getPuzzleSize(),
 	// but I reuse $l and $t
 	var l = puzzle.length;
@@ -214,5 +234,24 @@ function solvePuzzleForm()
 		return 0;
 	}
 	doSolvePuzzle(s, t, l, puzzle);
+	updateStats(oldPuzzle, 'solve');
 	fillPuzzle(s, t, l, puzzle);
+}
+
+function updateStats(puzzle, action)
+{
+	console.log(puzzle);
+	$.ajax(
+	{
+		type: "post",
+		url: "action_" + action + ".php?puzzle=" + puzzleToString(puzzle),
+		success: function(data,status)
+		{
+		    console.log(data);
+		},
+		complete: function(data,status)
+		{
+		    console.log(status);
+		}
+	});
 }

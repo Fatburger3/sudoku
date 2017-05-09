@@ -65,6 +65,10 @@ function puzzleToString($puzzle)
 		{
 			$result .= ',';
 		}
+		if(!isset($i) || $i == '')
+		{
+			$i = '0';
+		}
 		$result .= (string) $i;
 	}
 	return $result;

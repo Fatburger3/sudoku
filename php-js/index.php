@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 include('inc/layout.php');
-include('inc/db.php');
 include('inc/header.html');
+include('action_open.php');
 echo makeNav('Sudoku', 'index.php');
 
 $MAX_PUZZLE_SIZE = 8;

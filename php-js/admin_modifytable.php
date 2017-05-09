@@ -8,6 +8,15 @@
 		isset($_POST['start']) &&
 		isset($_POST['end'])
 	){
+
+		$puzzle = array();
+		$i = 0;
+		while(isset($_POST[(string)$i]))
+		{
+			$puzzle []= $_POST[(string)$i];
+			$i++;
+		}
+
 		$db = getDBConnection();
 		$table = $_POST['table'];
 		$start = $_POST['start'];
@@ -35,7 +44,14 @@
 			$np=array();
 			foreach($cols as $col)
 			{
-				$np[":$col"]=$_POST['original_'.$col];
+				if($col == 'payload')
+				{
+					$np[":$col"] = puzzleToString($puzzle);
+				}
+				else
+				{
+					$np[":$col"]=$_POST['original_'.$col];
+				}
 			}
 			$stmt->execute($np);
 			$message = "Rows deleted: ";
@@ -52,7 +68,8 @@
 				if($x == 0)
 				{
 					$x = 1;
-				} else
+				}
+				else
 				{
 					$q.=", ";
 				}
@@ -65,7 +82,8 @@
 				if($x == 0)
 				{
 					$x = 1;
-				} else
+				}
+				else
 				{
 					$q.=" AND ";
 				}
@@ -75,7 +93,14 @@
 			foreach($cols as $col)
 			{
 				$np[":original_$col"]=$_POST['original_'.$col];
-				$np[":$col"]=$_POST[$col];
+				if($col == 'payload')
+				{
+					$np[":$col"]=puzzleToString($puzzle);
+				}
+				else
+				{
+					$np[":$col"]=$_POST[$col];
+				}
 			}
 			$stmt = $db->prepare($q);
 			echo $q;
@@ -93,7 +118,8 @@
 				if($x == 0)
 				{
 					$x = 1;
-				} else
+				}
+				else
 				{
 					$q.=", ";
 				}
@@ -106,7 +132,8 @@
 				if($x == 0)
 				{
 					$x = 1;
-				} else
+				}
+				else
 				{
 					$q.=" , ";
 				}
@@ -116,16 +143,22 @@
 			$np=array();
 			foreach($cols as $col)
 			{
-				if(!isset($_POST[$col]))
+				if($col == 'payload')
 				{
-					$message = "<div class='error'>ERROR: $col was empty</div>";
-					header("Location: admin_tables.php?table=$table&start=$start&end=$end&message=$message");
+					$np[":$col"]=puzzleToString($puzzle);
 				}
-				$np[":$col"]=$_POST[$col];
+				else
+				{
+					if(!isset($_POST[$col]))
+					{
+						$message = "<div class='error'>ERROR: $col was empty</div>";
+						header("Location: admin_tables.php?table=$table&start=$start&end=$end&message=$message");
+					}
+					$np[":$col"]=$_POST[$col];
+				}
 			}
 			$q.=");";
 			$stmt = $db->prepare($q);
-			echo $q;
 			$stmt->execute($np);
 			$message = "New row added to $table";
 			header("Location: admin_tables.php?table=$table&start=$start&end=$end&message=$message");
