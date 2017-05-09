@@ -99,9 +99,10 @@ function makeDropdown($title, $name, $value, $names, $values, $onclick)
 function makePuzzle($puzzle)
 {
 	$s = getPuzzleSize($puzzle);
+	$result = '';
 
-	$result = '<table align="center" class="puzzle">';
-	$result .= '<div class="puzzle_size" style="display:hidden;">'.$s.'</div>';
+	$result .= '<table align="center" class="puzzle">';
+	$result .= '<div class="puzzle_size" style="display:none;">'.$s.'</div>';
 	for($yb = 0; $yb < $s; $yb++)
 	{
 		$result .= '<tr class="puzzle_block_row">';
@@ -126,6 +127,47 @@ function makePuzzle($puzzle)
 		$result .= '</tr>';
 	}
 	$result .= '</table>';
+	return $result;
+}
+
+// Displays a puzzle object in a cute little grid with a button that opens the puzzle form.
+function makePuzzleSelector($puzzle, $puzzle_string, $difficulty, $difficulty_id)
+{
+	$s = getPuzzleSize($puzzle);
+	$result = '';
+	$result .= "<label>Difficulty:</label> <span class='diff$difficulty_id'>$difficulty</span>";
+
+	$result .= '<table align="center" class="puzzle">';
+	$result .= '<div class="puzzle_size" style="display:none;">'.$s.'</div>';
+	for($yb = 0; $yb < $s; $yb++)
+	{
+		$result .= '<tr class="puzzle_block_row">';
+		for($xb = 0; $xb < $s; $xb++)
+		{
+			$result .= '<td class="puzzle_block"><table>';
+			for($y = 0; $y < $s; $y++)
+			{
+				$result .= '<tr class="puzzle_row">';
+				for($x = 0; $x < $s; $x++)
+				{
+					$i = indexOfBlock($s, $xb, $yb, $x, $y);
+					$result .= '<td class="puzzle_cell">';
+					$result .= ($puzzle[$i] == 0?' ':"<strong>".$puzzle[$i]."</strong>");
+					$result .= '</td>';
+				}
+				$result .= '</tr>';
+			}
+			$result .= '</table></td>';
+		}
+		$result .= '</tr>';
+	}
+	$result .= '</table>';
+	$result .= '<form action="index.php">';
+	$result .= "<input type='hidden' name='size' value='$s'/>";
+	$result .= "<input type='hidden' name='puzzle' value='$puzzle_string'/>";
+	$result .= '<button class="btn btn-primary">Open</button>';
+	$result .= '</form>';
+
 	return $result;
 }
 

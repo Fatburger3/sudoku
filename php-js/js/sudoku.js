@@ -25,7 +25,7 @@ function getPuzzleSize(puzzle)
 	var t = Math.sqrt(l);
 	if((t * t) != l)
 	{
-		console.log("error t = $t; l = $l; t * t = " + (t * t));
+		console.log("invalid puzzle (0)");
 		return 0;
 	}
 	var s = Math.sqrt(t);
@@ -121,7 +121,6 @@ function doSolvePuzzle(s, t, l, puzzle)
 			}
 		}
 
-
 		//Check the local block for conflicts
 		for(var j = 0; j < s; j++)
 		{
@@ -138,7 +137,7 @@ function doSolvePuzzle(s, t, l, puzzle)
 
 		// There are no conflicts, so we test-fill this cell with this value, then move on to the next cell
 		puzzle[indexOf(s, x, y)] = v;
-		var rec = solvePuzzle(s, t, l, puzzle);
+		var rec = doSolvePuzzle(s, t, l, puzzle);
 		if(rec != null) return rec;
 		else
 		{
@@ -167,11 +166,8 @@ function fillPuzzle(s, t, l, puzzle)
 function getPuzzle()
 {
 	var s = parseInt($(".puzzle > .puzzle_size").html());
-	console.log(s);
 	var t = s * s;
-	console.log(t);
 	var l = t * t;
-	console.log(l);
 	var puzzle = new Array(l);
 
 	for(var x = 0; x < t; x++)

@@ -5,7 +5,7 @@ include('inc/db.php');
 include('inc/header.html');
 echo makeNav('Sudoku', 'index.php');
 
-$MAX_PUZZLE_SIZE = 20;
+$MAX_PUZZLE_SIZE = 8;
 
 $size = 3;
 if(isset($_GET['size']))
@@ -22,16 +22,13 @@ else
 	$puzzle = getEmptyPuzzle($size);
 }
 
-
-echo makePuzzleForm($puzzle);
-
 ?>
 <br/>
 <form class="form-group centered-form">
 	<div class="input-group">
-		<select class="form-control" name='size'">
+		<select class="form-control" name='size'>
 			<?php
-					for($s=2;$s<$MAX_PUZZLE_SIZE;$s++)
+					for($s=2;$s<=$MAX_PUZZLE_SIZE;$s++)
 					{
 						echo "<option value=$s";
 						echo ($s == $size)?" selected='selected'>":">";
@@ -46,6 +43,10 @@ echo makePuzzleForm($puzzle);
 						else if($s === 4)
 						{
 							echo "Hexadoku puzzle(16x16)";
+						}
+						else if($s === $MAX_PUZZLE_SIZE)
+						{
+							echo "Okay, stop, you're gonna break the webpage";
 						}
 						else
 						{
@@ -69,4 +70,6 @@ echo makePuzzleForm($puzzle);
 </div>
 
 
-<?php include('inc/footer.html');?>
+<?php
+echo makePuzzleForm($puzzle);
+include('inc/footer.html');?>

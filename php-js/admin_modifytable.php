@@ -24,7 +24,8 @@
 				if($x == 0)
 				{
 					$x = 1;
-				} else
+				}
+				else
 				{
 					$q.=" AND ";
 				}
@@ -110,7 +111,7 @@
 					$q.=" , ";
 				}
 
-				$q.=($col=='password'?("SHA1(:$col)"):(":$col"));
+				$q.=($col=='pass'?("SHA1(:$col)"):(":$col"));
 			}
 			$np=array();
 			foreach($cols as $col)

@@ -495,3 +495,21 @@ Stack trace:
 [08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
 [08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
 [08-May-2017 22:30:55 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/ubuntu/workspace/sudoku/php-js/index.php on line 40
+[09-May-2017 04:32:06 UTC] PHP Parse error:  syntax error, unexpected 'for' (T_FOR), expecting ',' or ';' in /home/ubuntu/workspace/sudoku/php-js/search.php on line 55
+[09-May-2017 04:50:54 UTC] PHP Warning:  Missing argument 2 for makePuzzleSelector(), called in /home/ubuntu/workspace/sudoku/php-js/search.php on line 99 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 133
+[09-May-2017 04:50:54 UTC] PHP Stack trace:
+[09-May-2017 04:50:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/search.php:0
+[09-May-2017 04:50:54 UTC] PHP   2. makePuzzleSelector() /home/ubuntu/workspace/sudoku/php-js/search.php:99
+[09-May-2017 04:56:19 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 34
+[09-May-2017 04:56:19 UTC] PHP Stack trace:
+[09-May-2017 04:56:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/index.php:0
+[09-May-2017 04:56:19 UTC] PHP   2. getEmptyPuzzle() /home/ubuntu/workspace/sudoku/php-js/index.php:22
+[09-May-2017 05:40:32 UTC] PHP Warning:  Missing argument 3 for makePuzzleSelector(), called in /home/ubuntu/workspace/sudoku/php-js/search.php on line 153 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 134
+[09-May-2017 05:40:32 UTC] PHP Stack trace:
+[09-May-2017 05:40:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/search.php:0
+[09-May-2017 05:40:32 UTC] PHP   2. makePuzzleSelector() /home/ubuntu/workspace/sudoku/php-js/search.php:153
+[09-May-2017 05:48:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dif' in 'where clause'' in /home/ubuntu/workspace/sudoku/php-js/search.php:88
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/search.php(88): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/search.php on line 88

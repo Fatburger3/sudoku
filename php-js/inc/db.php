@@ -43,6 +43,21 @@ function getCols($table)
 	return $cols;
 }
 
+function getDifficulties()
+{
+	$db = getDBConnection();
+	$stmt = $db->prepare("SELECT * FROM difficulty;");
+	$stmt->execute();
+
+	$diffs = array();
+
+	while($x = $stmt->fetch())
+	{
+		$diffs[$x['difficulty_id']]=$x['difficulty'];
+	}
+	return $diffs;
+}
+
 function getDBConnection()
 {
 	$host = "localhost";
