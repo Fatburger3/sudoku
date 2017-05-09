@@ -23,6 +23,19 @@ function getPuzzleSize($puzzle)
 	return $s;
 }
 
+function getEmptyPuzzle($size)
+{
+	$puzzle = array();
+	$s = $size * $size;
+	$s *= $s;
+
+	for($i=0;$i<$s;$i++)
+	{
+		$puzzle []= 0;
+	}
+	return $puzzle;
+}
+
 // Converts a string (usually from db) to an array that represents a puzzle;
 function parsePuzzle($puzzle_string)
 {
@@ -75,7 +88,6 @@ function block($s, $xy)
 	return (int) ($xy / $s);
 }
 
-
 // Solve this puzzle array
 function solvePuzzle($puzzle)
 {
@@ -92,7 +104,6 @@ function solvePuzzle($puzzle)
 	{
 		die("invalid puzzle");
 	}
-
 	return doSolvePuzzle($s, $t, $l, $puzzle);
 }
 

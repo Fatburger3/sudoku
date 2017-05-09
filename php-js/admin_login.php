@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST")
 		<div class="block_header">
 		</div>
 
-		<div style="margin-left:30%;margin-right:30%;">
+		<div class="centered-form">
 
 			<form method='POST'>
 

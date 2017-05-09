@@ -5,10 +5,16 @@ include('inc/header.html');
 echo makeNav('Search', 'search.php');
 
 $puzzle_size = 3;
+$dif = 1;
 
 if(isset($_GET['size']))
 {
 	$puzzle_size = $_GET['size'];
+}
+
+if(isset($_GET['dif']))
+{
+	$puzzle_size = $_GET['dif'];
 }
 
 $puzzle_size *= $puzzle_size;

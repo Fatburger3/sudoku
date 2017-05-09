@@ -3,7 +3,6 @@
 <?php
 include('admin_session.php');
 include('inc/layout.php');
-include('inc/sudoku.php');
 include('inc/header.html');
 echo makeAdminNav("Tables", "admin_tables.php");
 
@@ -67,10 +66,10 @@ function displayTable($table, $start, $end)
 		$result.="<td colspan='3'></td>";
 	}
 
-	$stmt = $db->prepare("SELECT * FROM $table LIMIT :s, :e;");
+	// TODO: might need to prevent injection of $start/$end
+
+	$stmt = $db->prepare("SELECT * FROM $table LIMIT $start, $end;");
 	$np = array();
-	$np[':s'] = $start;
-	$np[':e'] = $end;
 	$stmt->execute($np);
 
 
@@ -82,7 +81,24 @@ function displayTable($table, $start, $end)
 	{
 		$result.="<td title='$col'>";
 
-		$result.="<input type='text' name='$col' value='' style='width:100%;'/>";
+		if($col === 'payload')
+		{
+			$s = 1;
+			while($table != 'puzzle'.((string)$s))
+			{
+				if($s === 50)
+				{
+					die("whoa! what size of puzzle you tryna mess with?");
+				}
+				$s++;
+			}
+			$result.=makePuzzleForm(getEmptyPuzzle($s));
+		}
+		else
+		{
+			$result.="<input type='text' name='$col' value='' style='width:100%;'/>";
+		}
+
 
 		$result.="</td>";
 	}
@@ -103,32 +119,56 @@ function displayTable($table, $start, $end)
 		foreach($cols as $col)
 		{
 			$result.="<td title='$col'>";
-			if($col != 'pass')
-			{
-				$result.="<input type='text' name='$col' value='".$row[$col]."' style='width:100%;'/>";
-				$result.="<input type='hidden' name='original_$col' value='".$row[$col]."'/>";
-			}
-			else if($col == 'payload')
-			{
-				$result.=;
-			}
-			else
+			if($col == 'pass')
 			{
 				$result.="<input type='text' name='$col' value='' style='width:100%;'/>";
 				$result.="<input type='hidden' name='original_$col' value='".$row[$col]."'/>";
 			}
+			else if($col == 'payload')
+			{
+				$puzzle = parsePuzzle($row[$col]);
+				$result.="<input type='hidden' name='original_$col' value='".$row[$col]."'/>";
+				$result .= makePuzzleForm($puzzle);
+			}
+			else
+			{
+				$result.="<input type='text' name='$col' value='".$row[$col]."' style='width:100%;'/>";
+				$result.="<input type='hidden' name='original_$col' value='".$row[$col]."'/>";
+			}
 			$result.="</td>";
 		}
-		$result.="<td>";
-		$result.="<input type='hidden' name='table' value='$table'/>";
+		if(strpos($table, 'puzzle') !== false)
+		{
 
-		//saving this stuff for after modifytable.php executes
-		$result.="<input type='hidden' name='start' value='$start'/>";
-		$result.="<input type='hidden' name='end' value='$end'/>";
+			$result.="<td>";
+			$result.="<input type='hidden' name='table' value='$table'/>";
 
-		$result.="<input type='submit' name='delete' value='Delete' style='width:50%;'/>";
-		$result.="<input type='submit' name='update' value='Update' style='width:50%;'/>";
-		$result.="</td>";
+			//saving this stuff for after modifytable.php executes
+			$result.="<input type='hidden' name='start' value='$start'/>";
+			$result.="<input type='hidden' name='end' value='$end'/>";
+
+			$result.="<input type='submit' name='delete' value='Delete' style='width:100%;'/>";
+			$result.="<input type='submit' name='update' value='Update' style='width:100%;'/>";
+			$puzzle = parsePuzzle($row['payload']);
+			$result.="<input type='hidden' name='puzzle' value='".$row['payload']."'/>";
+			$result.="<input type='hidden' name='size' value='".getPuzzleSize($puzzle)."'/>";
+
+			$result.="<input type='submit' name='open' value='Open' style='width:100%;'/>";
+			$result.="</td>";
+		}
+		else
+		{
+			$result.="<td>";
+			$result.="<input type='hidden' name='table' value='$table'/>";
+
+			//saving this stuff for after modifytable.php executes
+			$result.="<input type='hidden' name='start' value='$start'/>";
+			$result.="<input type='hidden' name='end' value='$end'/>";
+
+			$result.="<input type='submit' name='delete' value='Delete' style='width:50%;'/>";
+			$result.="<input type='submit' name='update' value='Update' style='width:50%;'/>";
+			$result.="</td>";
+		}
 		$result.="</form>";
 		$result.="</tr>";
 	}

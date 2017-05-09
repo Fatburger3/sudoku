@@ -1,0 +1,497 @@
+[08-May-2017 21:32:06 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/sudoku/php-js/admin_tables.php on line 113
+[08-May-2017 21:33:20 UTC] PHP Fatal error:  Cannot redeclare getPuzzleSize() (previously declared in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php:10) in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 10
+[08-May-2017 21:33:20 UTC] PHP Stack trace:
+[08-May-2017 21:33:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:33:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0', '100'' at line 1' in /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:73
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/admin_tables.php(73): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/sudoku/php-js/admin_tables.php(166): displayTable('puzzle3', '0', '100')
+#2 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/admin_tables.php on line 73
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 21:45:35 UTC] PHP Warning:  Missing argument 5 for indexOfBlock(), called in /home/ubuntu/workspace/sudoku/php-js/inc/layout.php on line 115 and defined in /home/ubuntu/workspace/sudoku/php-js/inc/sudoku.php on line 80
+[08-May-2017 21:45:35 UTC] PHP Stack trace:
+[08-May-2017 21:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:0
+[08-May-2017 21:45:35 UTC] PHP   2. displayTable() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:184
+[08-May-2017 21:45:35 UTC] PHP   3. makePuzzle() /home/ubuntu/workspace/sudoku/php-js/admin_tables.php:95
+[08-May-2017 21:45:35 UTC] PHP   4. indexOfBlock() /home/ubuntu/workspace/sudoku/php-js/inc/layout.php:115
+[08-May-2017 22:30:55 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/ubuntu/workspace/sudoku/php-js/index.php on line 40

@@ -129,11 +129,17 @@
 			$message = "New row added to $table";
 			header("Location: admin_tables.php?table=$table&start=$start&end=$end&message=$message");
 		}
+		else if(isset($_POST['open']) && isset($_POST['puzzle']) && isset($_POST['size']))
+		{
+			$puzzle = $_POST['puzzle'];
+			$size = $_POST['size'];
+			header("Location: index.php?puzzle=$puzzle&size=$size");
+		}
 	}
 	else
 	{
 		// YOU'VE COME TO THE WRONG PLACE, I'M KICKING YOU OUT
-		header("Location: tables.php");
+		header("Location: admin_tables.php");
 	}
 
 ?>

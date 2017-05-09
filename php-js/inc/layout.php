@@ -4,7 +4,7 @@ include("sudoku.php");
 // Echos a navBar
 function makeNav($title, $current)
 {
-	$names=array("Play", "Search", "Admin");
+	$names=array("Play sudoku", "Search puzzles", "Admin");
 	$pages=array("index.php", "search.php", "admin_index.php");
 
 	$result = '
@@ -101,6 +101,7 @@ function makePuzzle($puzzle)
 	$s = getPuzzleSize($puzzle);
 
 	$result = '<table align="center" class="puzzle">';
+	$result .= '<div class="puzzle_size" style="display:hidden;">'.$s.'</div>';
 	for($yb = 0; $yb < $s; $yb++)
 	{
 		$result .= '<tr class="puzzle_block_row">';
@@ -112,7 +113,7 @@ function makePuzzle($puzzle)
 				$result .= '<tr class="puzzle_row">';
 				for($x = 0; $x < $s; $x++)
 				{
-					$i = indexOfBlock($xb, $yb, $x, $y);
+					$i = indexOfBlock($s, $xb, $yb, $x, $y);
 					$result .= '<td class="puzzle_cell">';
 					//$result .= ($puzzle[$i] == 0?' ':$puzzle[$i]);
 					$result .= ($puzzle[$i]);
@@ -134,7 +135,7 @@ function makePuzzleForm($puzzle)
 	$s = getPuzzleSize($puzzle);
 
 	//$result .=  '<form class="puzzle_form">';
-	$result = '<table align="center" class="puzzle">';
+	$result = '<div class="puzzle"><span class="puzzle_size" style="display:none;">'.$s.'</span><table align="center">';
 	$i = 0;
 	for($yb = 0; $yb < $s; $yb++)
 	{
@@ -164,12 +165,22 @@ function makePuzzleForm($puzzle)
 		}
 		$result .= '</tr>';
 	}
-	$result .= '</table><br/>';
-	$result .= '<div class="btn-group" role="group" aria-label="Basic example">';
+	$result .= '</table></div>';
+	// $result .= '<div class="btn-group" role="group" aria-label="Basic example">';
+	// $result .= '<button class="btn btn-success" onclick="solvePuzzleForm(); return false;">Solve</button>';
+	// $result .= '<button class="btn btn-warning" onclick="clearInputs(); return false;">Clear</button>';
+	// $result .= '</div>';
+	//$result .=  '</form>';
+	return $result;
+}
+
+function makePuzzleControls()
+{
+
+	$result = '<div class="btn-group" role="group" aria-label="Basic example">';
 	$result .= '<button class="btn btn-success" onclick="solvePuzzleForm(); return false;">Solve</button>';
 	$result .= '<button class="btn btn-warning" onclick="clearInputs(); return false;">Clear</button>';
 	$result .= '</div>';
-	//$result .=  '</form>';
-	return $result;
+	return result;
 }
 ?>

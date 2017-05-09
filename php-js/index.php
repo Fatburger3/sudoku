@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <?php
 include('inc/layout.php');
+include('inc/db.php');
 include('inc/header.html');
-echo makeNav('Home', 'index.php');
+echo makeNav('Sudoku', 'index.php');
 
-$puzzle_size = 3;
+$MAX_PUZZLE_SIZE = 20;
 
+$size = 3;
 if(isset($_GET['size']))
 {
-	$puzzle_size = $_GET['size'];
+	$size = $_GET['size'];
 }
 
-$puzzle_size *= $puzzle_size;
-$puzzle_size *= $puzzle_size;
-
-$puzzle = array(0);
-
-for($i = 1;$i < $puzzle_size; $i++)
+if(isset($_GET['puzzle']))
 {
-	$puzzle []= 0;
+	$puzzle = parsePuzzle($_GET['puzzle']);
+}
+else
+{
+	$puzzle = getEmptyPuzzle($size);
 }
 
-?>
-
-
-
-<?php
 
 echo makePuzzleForm($puzzle);
 
-include('inc/footer.html');
 ?>
+<br/>
+<form class="form-group centered-form">
+	<div class="input-group">
+		<select class="form-control" name='size'">
+			<?php
+					for($s=2;$s<$MAX_PUZZLE_SIZE;$s++)
+					{
+						echo "<option value=$s";
+						echo ($s == $size)?" selected='selected'>":">";
+						if($s === 2)
+						{
+							echo "Basic puzzle(4x4)";
+						}
+						else if($s === 3)
+						{
+							echo "Sudoku puzzle(9x9)";
+						}
+						else if($s === 4)
+						{
+							echo "Hexadoku puzzle(16x16)";
+						}
+						else
+						{
+							$t = $s * $s;
+							echo $t."X".$t." puzzle";
+						}
+						echo "</option>";
+					}
+			?>
+		</select>
+		<span class="input-group-btn">
+			<button class="btn btn-primary form-control">Go</button>
+		</span>
+	</div>
+</form>
+
+<br/>
+<div class="btn-group form-group" role="group" aria-label="Basic example">
+	<button class="btn btn-success" onclick="solvePuzzleForm(); return false;">Solve</button>
+	<button class="btn btn-warning" onclick="clearInputs(); return false;">Clear</button>
+</div>
+
+
+<?php include('inc/footer.html');?>
