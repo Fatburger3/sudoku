@@ -2,7 +2,7 @@ html, body {
 	text-align: center;
 	background-color: black;
 }
-h1 {
+h1, h2, h3, h4, h5, h6, th {
 	color: white;
 }
 
@@ -47,7 +47,7 @@ label{
 	color: white;
 }
 .diff1{
-	color: green;
+	color: lightgreen;
 }
 
 .diff2{
@@ -55,19 +55,19 @@ label{
 }
 
 .diff3{
-	color: white;
+	color: blue;
 }
 .diff4{
-	color: blue;
+	color: yellow;
 }
 .diff5{
-	color: blue;
+	color: orange;
 }
 .diff6{
 	color: purple;
 }
 .diff7{
-	color: orange;
+	color: hotpink;
 }
 .diff8{
 	color: red;

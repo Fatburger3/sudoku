@@ -48,7 +48,7 @@ function displayTable($table, $start, $end)
 
 	$result="";
 
-	$result.="<table align='center' style='padding:30px;overflow-x:scroll;width:100%;table-layout:fixed'>";
+	$result.="<table align='center' style='padding:30px;overflow-x:scroll;width:80%;table-layout:fixed'>";
 	$result.="<tr>";
 	$i = 0;
 	$f = 0;

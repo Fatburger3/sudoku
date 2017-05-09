@@ -144,18 +144,6 @@ if(!$stmt->execute($np))
 		</select>
 	</div>
 
-	<input type='hidden' name='start' value='<?php echo $start;?>'/>
-
-	<div class="form-group">
-		<label for='count'>Number of results per page: </label>
-		<input class='form-control' type='number' name='count' value='<?php echo $count;?>'/>
-	</div>
-
-	<div class="form-group">
-		<label for='count'>Current page: </label>
-		<input class='form-control' type='number' name='page' value='<?php echo $page;?>'/>
-	</div>
-
 	<div class="form-group">
 		<label for='count'>Difficulty: </label>
 		<select class="form-control" name='dif'>
@@ -169,6 +157,18 @@ if(!$stmt->execute($np))
 				}
 			?>
 		</select>
+	</div>
+
+	<input type='hidden' name='start' value='<?php echo $start;?>'/>
+
+	<div class="form-group">
+		<label for='count'>Number of results per page: </label>
+		<input class='form-control' type='number' name='count' value='<?php echo $count;?>'/>
+	</div>
+
+	<div class="form-group">
+		<label for='count'>Current page: </label>
+		<input class='form-control' type='number' name='page' value='<?php echo $page;?>'/>
 	</div>
 
 	<div class="form-group">

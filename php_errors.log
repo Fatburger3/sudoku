@@ -666,3 +666,12 @@ Stack trace:
 [09-May-2017 08:04:29 UTC] PHP Stack trace:
 [09-May-2017 08:04:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/index.php:0
 [09-May-2017 08:04:29 UTC] PHP   2. include() /home/ubuntu/workspace/sudoku/php-js/index.php:6
+[09-May-2017 09:04:29 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/sudoku/php-js/admin_reports.php on line 34
+[09-May-2017 09:04:29 UTC] PHP Stack trace:
+[09-May-2017 09:04:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/sudoku/php-js/admin_reports.php:0
+[09-May-2017 09:04:29 UTC] PHP   2. sizeData() /home/ubuntu/workspace/sudoku/php-js/admin_reports.php:56
+[09-May-2017 09:18:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/sudoku/php-js/admin_reports.php:69
+Stack trace:
+#0 /home/ubuntu/workspace/sudoku/php-js/admin_reports.php(69): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/sudoku/php-js/admin_reports.php on line 69
