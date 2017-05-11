@@ -6,7 +6,7 @@ include('inc/layout.php');
 include('inc/header.html');
 echo makeAdminNav("Tables", "admin_tables.php");
 
-function displayForm($tables, $selected, $start, $end)
+function displayForm($tables, $selected, $start, $count)
 {
 	$form="<form style='margin-left:30%;margin-right:30%;'>";
 	$form.='<div class="form-group">';
@@ -27,8 +27,8 @@ function displayForm($tables, $selected, $start, $end)
 	$form.="<input class='form-control' type='number' name='start' value='$start'/>";
 	$form.='</div>';
 	$form.='<div class="form-group">';
-	$form.="<label for='end'>Ending at row: </label>";
-	$form.="<input class='form-control' type='number' name='end' value='$end'/>";
+	$form.="<label for='count'>Number of results: </label>";
+	$form.="<input class='form-control' type='number' name='count' value='$count'/>";
 	$form.='</div>';
 	$form.='<div class="form-group">';
 	$form.="<button class='btn btn-primary'>Go</button>";
@@ -37,7 +37,7 @@ function displayForm($tables, $selected, $start, $end)
 	return $form;
 }
 
-function displayTable($table, $start, $end)
+function displayTable($table, $start, $count)
 {
 
 	$db = getDBConnection();
@@ -48,7 +48,7 @@ function displayTable($table, $start, $end)
 
 	$result="";
 
-	$result.="<table align='center' style='padding:30px;overflow-x:scroll;width:80%;table-layout:fixed'>";
+	$result.="<table align='center' class='admin_table'>";
 	$result.="<tr>";
 	$i = 0;
 	$f = 0;
@@ -66,15 +66,15 @@ function displayTable($table, $start, $end)
 		$result.="<td colspan='3'></td>";
 	}
 
-	// TODO: might need to prevent injection of $start/$end
+	// TODO: might need to prevent injection of $start/$count
 
-	$stmt = $db->prepare("SELECT * FROM $table LIMIT $start, $end;");
+	$stmt = $db->prepare("SELECT * FROM $table LIMIT $start, $count;");
 	$np = array();
 	$stmt->execute($np);
 
 
 	// For adding rows
-	$result.="<tr>";
+	$result.="<tr class='admin_table_row'>";
 	$result.="<form method='post' action='admin_modifytable.php'>";
 	$i = 0;
 	foreach($cols as $col)
@@ -105,7 +105,7 @@ function displayTable($table, $start, $end)
 	$result.="<td>";
 	$result.="<input type='hidden' name='table' value='$table'/>";
 	$result.="<input type='hidden' name='start' value='$start'/>";
-	$result.="<input type='hidden' name='end' value='$end'/>";
+	$result.="<input type='hidden' name='end' value='$count'/>";
 	$result.="<input type='submit' name='addrow' value='Add row' style='width:100%;'/>";
 	$result.="</td>";
 	$result.="</form>";
@@ -114,7 +114,7 @@ function displayTable($table, $start, $end)
 	// Now print all the modifiable rows
 	while($row = $stmt->fetch())
 	{
-		$result.="<form method='post' action='admin_modifytable.php'>";
+		$result.="<tr class='admin_table_row'><form method='post' action='admin_modifytable.php'>";
 		$i = 0;
 		foreach($cols as $col)
 		{
@@ -145,7 +145,7 @@ function displayTable($table, $start, $end)
 
 			//saving this stuff for after modifytable.php executes
 			$result.="<input type='hidden' name='start' value='$start'/>";
-			$result.="<input type='hidden' name='end' value='$end'/>";
+			$result.="<input type='hidden' name='end' value='$count'/>";
 
 			$result.="<input type='submit' name='delete' value='Delete' style='width:100%;'/>";
 			$result.="<input type='submit' name='update' value='Update' style='width:100%;'/>";
@@ -163,7 +163,7 @@ function displayTable($table, $start, $end)
 
 			//saving this stuff for after modifytable.php executes
 			$result.="<input type='hidden' name='start' value='$start'/>";
-			$result.="<input type='hidden' name='end' value='$end'/>";
+			$result.="<input type='hidden' name='end' value='$count'/>";
 
 			$result.="<input type='submit' name='delete' value='Delete' style='width:50%;'/>";
 			$result.="<input type='submit' name='update' value='Update' style='width:50%;'/>";
@@ -179,7 +179,7 @@ function displayTable($table, $start, $end)
 //Default table to display is none
 $table='';
 $start=0;
-$end=100;
+$count=100;
 $message='';
 if(isset($_GET['table']))
 {
@@ -189,9 +189,9 @@ if(isset($_GET['start']))
 {
 	$start=$_GET['start'];
 }
-if(isset($_GET['end']))
+if(isset($_GET['count']))
 {
-	$end=$_GET['end'];
+	$count=$_GET['count'];
 }
 if(isset($_GET['message']))
 {
@@ -200,11 +200,11 @@ if(isset($_GET['message']))
 
 $tables=getTables();
 $body.=$message;
-$body.=displayForm($tables, $table, $start, $end);
+$body.=displayForm($tables, $table, $start, $count);
 if($table!='')
 {
 	$body.="$table:<br/>";
-	$body.=displayTable($table, $start, $end);
+	$body.=displayTable($table, $start, $count);
 }
 
 echo $body;

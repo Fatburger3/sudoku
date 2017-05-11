@@ -6,7 +6,7 @@
 		isset($_POST) &&
 		isset($_POST['table']) &&
 		isset($_POST['start']) &&
-		isset($_POST['end'])
+		isset($_POST['count'])
 	){
 
 		$puzzle = array();
@@ -20,7 +20,7 @@
 		$db = getDBConnection();
 		$table = $_POST['table'];
 		$start = $_POST['start'];
-		$end = $_POST['end'];
+		$count = $_POST['count'];
 		$cols = getCols($table);
 		//TODO PREVENT INJECTION OF TABLE
 		if(isset($_POST['delete']))
@@ -56,7 +56,7 @@
 			$stmt->execute($np);
 			$message = "Rows deleted: ";
 			$message.= $stmt->rowCount();
-			header("Location: admin_tables.php?table=$table&start=$start&end=$end&message=$message");
+			header("Location: admin_tables.php?table=$table&start=$start&count=$count&message=$message");
 		}
 		else if(isset($_POST['update']))
 		{
@@ -106,7 +106,7 @@
 			echo $q;
 			$stmt->execute($np);
 			$message = "Table updated";
-			header("Location: admin_tables.php?table=$table&start=$start&end=$end&message=$message");
+			header("Location: admin_tables.php?table=$table&start=$start&count=$count&message=$message");
 		}
 		else if(isset($_POST['addrow']))
 		{
@@ -152,7 +152,7 @@
 					if(!isset($_POST[$col]))
 					{
 						$message = "<div class='error'>ERROR: $col was empty</div>";
-						header("Location: admin_tables.php?table=$table&start=$start&end=$end&message=$message");
+						header("Location: admin_tables.php?table=$table&start=$start&count=$count&message=$message");
 					}
 					$np[":$col"]=$_POST[$col];
 				}
@@ -161,7 +161,7 @@
 			$stmt = $db->prepare($q);
 			$stmt->execute($np);
 			$message = "New row added to $table";
-			header("Location: admin_tables.php?table=$table&start=$start&end=$end&message=$message");
+			header("Location: admin_tables.php?table=$table&start=$start&count=$count&message=$message");
 		}
 		else if(isset($_POST['open']) && isset($_POST['puzzle']) && isset($_POST['size']))
 		{

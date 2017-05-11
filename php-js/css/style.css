@@ -9,6 +9,17 @@ h1, h2, h3, h4, h5, h6, th {
 .puzzle_block{
 	border: solid 5px salmon;
 }
+.admin_table {
+	padding:30px;
+	overflow-x:scroll;
+	width:80%;
+	table-layout:fixed;
+	border-collapse: collapse;
+}
+.admin_table_row{
+	border-top: solid 2px white;
+	vertical-align: top;
+}
 .puzzle_input_cell, .puzzle_cell{
 	border: solid 1px gray;
 	width: 20px;
